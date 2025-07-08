@@ -160,7 +160,7 @@ app.post('/api/create-event', async (req, res) => {
 app.post('/api/logout', (req, res) => {
   req.session.destroy(() => {
     res.clearCookie('connect.sid');
-    res.json({ message: 'Logged out' });
+    res.json({ message: 'User Logged out' });
   });
 });
 
